@@ -67,7 +67,6 @@ const EditLink = (props: EditLinkProps) => {
       setLoading(true);
       await updateLink(values);
 
-      // If not any changes in the tags, return:
       toast.success("Link edited successfully.", {
         description: `Url: https://lcut.vercel.app/${values.slug}`,
         duration: 10000,

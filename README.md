@@ -90,12 +90,3 @@ and  open [http://localhost:5555](http://localhost:5555) with your browser ✨
 ⬆️ **Auth:**
 
 - ✅ Sign In with Github.
-
-⬆️ **Dashboard (tags):**
-
-- ✅ Add search links by tags in the dashboard.
-- 🔔 Create a new tag.
-- ✅ Delete a tag.
-- ⚙️ Update the tags of a link.
-
-🔔 Add option to change tag color.

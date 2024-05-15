@@ -17,32 +17,9 @@ model Links {
     createdBy   User?      @relation(fields: [creatorId], references: [id], onDelete: Cascade)
     creatorId   String
     clicks      Int        @default(0)
-    lastClicked DateTime?
-    tags        LinkTags[]
 
     @@index(slug)
     @@index([creatorId])
-}
-
-model Tags {
-    id        String     @id @default(cuid())
-    name      String
-    color     String?
-    createdAt DateTime   @default(now())
-    createdBy User?      @relation(fields: [creatorId], references: [id])
-    creatorId String
-    links     LinkTags[]
-
-    @@index([creatorId])
-}
-
-model LinkTags {
-    link   Links  @relation(fields: [linkId], references: [id], onDelete: Cascade)
-    linkId String
-    tag    Tags   @relation(fields: [tagId], references: [id], onDelete: Cascade)
-    tagId  String
-
-    @@id([linkId, tagId])
 }
 
 model Account {
@@ -83,47 +60,8 @@ model User {
     emailVerified         DateTime?
     image                 String?
     password              String?
-    limitLinks            Int                    @default(30)
-    isTwoFactorEnabled    Boolean                @default(false)
-    twoFactorConfirmation TwoFactorConfirmation?
     role                  String                 @default("USER")
     accounts              Account[]
     sessions              Session[]
     links                 Links[]
-    tags                  Tags[]
-}
-
-model VerificationToken {
-    id      String   @id @default(cuid())
-    email   String
-    token   String   @unique
-    expires DateTime
-
-    @@unique([email, token])
-}
-
-model PasswordResetToken {
-    id      String   @id @default(cuid())
-    email   String
-    token   String   @unique
-    expires DateTime
-
-    @@unique([email, token])
-}
-
-model TwoFactorToken {
-    id      String   @id @default(cuid())
-    email   String
-    token   String   @unique
-    expires DateTime
-
-    @@unique([email, token])
-}
-
-model TwoFactorConfirmation {
-    id     String @id @default(cuid())
-    userId String
-    user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-    @@unique([userId])
 }

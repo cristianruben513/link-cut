@@ -1,4 +1,3 @@
-import { buttonVariants } from "@/ui/button";
 import { TypographyH1, TypographyP } from "@/ui/typography";
 import { LinkIcon } from "lucide-react";
 import Link from "next/link";
