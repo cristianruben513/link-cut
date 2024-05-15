@@ -84,7 +84,7 @@ export function CreateLink(props: CreateLinkProps) {
       }
 
       toast.success("Link created successfully", {
-        description: `Url: https://strim.vercel.app/${values.slug}`,
+        description: `Url: https://lcut.vercel.app/${values.slug}`,
         duration: 10000,
         closeButton: true,
       });

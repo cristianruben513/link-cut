@@ -65,7 +65,7 @@ const CopyQR = ({ linkInfo }: CopyQRProps) => {
             id="qr-code"
             size={128}
             style={{ height: "auto" }}
-            value={`https://strim.vercel.app/${linkInfo.slug}`}
+            value={`https://lcut.vercel.app/${linkInfo.slug}`}
             viewBox={`0 0 128 128`}
           />
         </div>

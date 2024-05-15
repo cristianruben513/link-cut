@@ -4,7 +4,7 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Slash Trim",
+  "name": "Link Cut",
   "description": "URL shortener",
   "short_name": "Slash",
   "icons": [

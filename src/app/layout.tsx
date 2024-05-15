@@ -1,4 +1,3 @@
-import Footer from "@/components/layout/footer";
 import Header from "@/components/layout/header";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { ToasterComponent } from "@/components/providers/toaster";
@@ -26,10 +25,10 @@ const geistMonoVariable = localFont({
 
 // Metadata:
 export const metadata: Metadata = {
-  metadataBase: new URL("https://strim.vercel.app/"),
+  metadataBase: new URL("https://lcut.vercel.app/"),
   title: {
-    default: "Slash Trim - URL shortener",
-    template: "%s - Slash Trim",
+    default: "Link Cut - URL shortener",
+    template: "%s - Link Cut",
   },
   manifest: "/manifest.json",
   icons: [
@@ -48,15 +47,15 @@ export const metadata: Metadata = {
   ],
   description: "URL shortener",
   openGraph: {
-    title: "Slash Trim",
+    title: "Link Cut",
     description: "URL shortener",
-    url: "https://strim.vercel.app/images/og_image.png",
-    siteName: "Slash Trim - URL shortener",
+    url: "https://lcut.vercel.app/images/og_image.png",
+    siteName: "Link Cut - URL shortener",
     locale: "en_US",
     type: "website",
   },
   twitter: {
-    title: "Slash Trim - URL shortener",
+    title: "Link Cut - URL shortener",
     card: "summary_large_image",
   },
 };

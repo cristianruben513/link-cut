@@ -69,7 +69,7 @@ const EditLink = (props: EditLinkProps) => {
 
       // If not any changes in the tags, return:
       toast.success("Link edited successfully.", {
-        description: `Url: https://strim.vercel.app/${values.slug}`,
+        description: `Url: https://lcut.vercel.app/${values.slug}`,
         duration: 10000,
         closeButton: true,
       });

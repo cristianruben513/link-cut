@@ -24,7 +24,7 @@ const Header = () => {
             >
               <Logo />
               <span className="self-center whitespace-nowrap text-lg font-medium tracking-tight dark:text-white">
-                Slash Trim
+                Link Cut
               </span>
             </Link>
           </div>
