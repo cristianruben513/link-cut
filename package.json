@@ -14,7 +14,7 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev --name init",
     "db:studio": "prisma studio",
-    "db:push": "turso db shell slash-trim < ./prisma/migrations/20240514050715_init/migration.sql",
+    "db:push": "turso db shell slash-trim < ./prisma/migrations/20240515054808_init/migration.sql",
     "db:pscale:dump": "pscale database dump databasename databasebranch",
     "db:turso:dump": "turso db shell slash-trim .dump > dump.sql"
   },
