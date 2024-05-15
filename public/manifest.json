@@ -1,0 +1,17 @@
+{
+  "theme_color": "#171717",
+  "background_color": "#171717",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Slash Trim",
+  "description": "URL shortener",
+  "short_name": "Slash",
+  "icons": [
+    {
+      "src": "/images/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
