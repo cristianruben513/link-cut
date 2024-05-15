@@ -49,15 +49,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Link Cut",
     description: "URL shortener",
-    url: "https://lcut.vercel.app/images/og_image.png",
+    images: "https://lcut.vercel.app/images/og_image.png",
+    url: "https://lcut.vercel.app",
     siteName: "Link Cut - URL shortener",
     locale: "en_US",
     type: "website",
-  },
-  twitter: {
-    title: "Link Cut - URL shortener",
-    card: "summary_large_image",
-  },
+  }
 };
 
 export const viewport: Viewport = {
