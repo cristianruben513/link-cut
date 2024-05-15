@@ -34,8 +34,7 @@ export const urlFromServer = async (
       data: {
         clicks: {
           increment: 1,
-        },
-        lastClicked: new Date(),
+        }
       },
     });
 

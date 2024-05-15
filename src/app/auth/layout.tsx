@@ -1,4 +1,3 @@
-import Footer from "@/components/layout/footer";
 import type { ReactNode } from "react";
 
 interface AuthLayoutProps {
@@ -13,7 +12,6 @@ const AuthLayout = (props: AuthLayoutProps) => {
           {props.children}
         </div>
       </main>
-      <Footer className="fixed bottom-0 py-4" />
     </>
   );
 };

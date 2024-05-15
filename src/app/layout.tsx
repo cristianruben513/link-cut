@@ -77,8 +77,7 @@ export default function RootLayout({
         )}
       >
         <div className={cn(
-          "fixed inset-0 -z-10 h-full w-full dark:bg-neutral-900 bg-neutral-100 bg-[linear-gradient(to_right,#80808030_1px,transparent_1px),linear-gradient(to_bottom,#80808030_1px,transparent_1px)] bg-[size:60px_52px]",
-          "dark:bg-[linear-gradient(to_right,#1c1c1c_1px,transparent_1px),linear-gradient(to_bottom,#1c1c1c_1px,transparent_1px)] bg-[size:60px_52px]"
+          "fixed inset-0 -z-10 h-full w-full dark:bg-neutral-900 bg-neutral-100 bg-[linear-gradient(to_right,#80808030_1px,transparent_1px),linear-gradient(to_bottom,#80808030_1px,transparent_1px)] bg-[size:60px_52px]  dark:bg-[linear-gradient(to_right,#1c1c1c_1px,transparent_1px),linear-gradient(to_bottom,#1c1c1c_1px,transparent_1px)]"
         )}></div>
 
         <ThemeProvider

@@ -1,9 +1,6 @@
-import type { ReactNode } from "react";
-import { cn } from "@/utils";
-
 interface Props {
   href: string;
-  children: ReactNode;
+  children: React.ReactNode;
   className?: string;
 }
 
@@ -13,7 +10,7 @@ const ExternalLink = (props: Props) => {
       href={props.href}
       rel="noreferrer"
       target="_blank"
-      className={cn(props.className)}
+      className={props.className}
     >
       {props.children}
     </a>

@@ -1,4 +1,3 @@
-import Footer from "@/components/layout/footer";
 import { buttonVariants } from "@/ui/button";
 import ExternalLink from "@/ui/external-link";
 import { ArrowUpRight, HomeIcon } from "lucide-react";
@@ -36,7 +35,6 @@ const NotFoundPage = async () => {
           </div>
         </div>
       </div>
-      <Footer className="fixed bottom-0 mt-4 py-4" />
     </>
   );
 };
